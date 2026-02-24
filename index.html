@@ -1,183 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridging the Divide: The Eveleigh Bridge Project</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eveleigh Bridge Alliance</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="./">
-                    <img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Bridging the Divide</a></li>
-                <li><a href="#divide">The Great Divide</a></li>
-                <li><a href="#mission">Our Mission</a></li>
-                <li><a href="#proposed">The Proposed Bridge</a></li>
-                <li><a href="#supporters">Campaign Supporters</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="site-header">
+  <div class="container header-inner">
+    <img src="images/everleigh-logo.png" alt="Eveleigh Logo" class="logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Main -->
-    <main>
+<section class="hero">
+  <div class="container">
+    <h1>Building Stronger Infrastructure Together</h1>
+    <p>Eveleigh Bridge Alliance delivers structural excellence across Australia.</p>
+    <a href="#contact" class="btn-primary">Work With Us</a>
+    <a href="#about" class="btn-secondary">Learn More</a>
+  </div>
+</section>
 
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" style="background-image: url('assets/images/hero-bg.webp');">
-            <div class="hero-overlay"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1>Bridging the Divide: The Eveleigh Bridge Project</h1>
-                    <p class="hero-subtext">
-                        For over a century, the railway corridor has served as the industrial heart of Sydney.
-                        Today, it stands as a physical barrier keeping neighbours apart.
-                        We are campaigning to finally build the bridge that will reunite across Eveleigh.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#supporters" class="btn btn-primary">Support the Bridge</a>
-                        <a href="#proposed" class="btn btn-secondary">View the Masterplan</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Committed to engineering precision and collaborative excellence.</p>
+    <div class="more-content hidden">
+      <p>We provide full-service structural planning, reinforcement and execution for modern bridge systems.</p>
+    </div>
+    <button class="toggle-btn">More...</button>
+  </div>
+</section>
 
-        <!-- The Divide -->
-        <section id="divide" class="section-divide">
-            <div class="container grid-2">
-                <div class="content-left">
-                    <h2>The Great Divide: Why We Need the Bridge</h2>
-                    <p>
-                        The rail corridor between Redfern and Erskineville creates a 3.5-kilometre physical barrier.
-                        It's a 46-minute walk around the barrier, cutting off neighbours and making simple trips a major chore.
-                    </p>
-                    <h3>Reconnecting Our Suburbs</h3>
-                    <ul>
-                        <li><strong>North Side:</strong> Darlington, Newtown, Chippendale, Ultimo, Sydney University, and Carriageworks.</li>
-                        <li><strong>South Side:</strong> Alexandria, Erskineville, Waterloo, South Eveleigh (CBA/Mirvac), and the local high school.</li>
-                    </ul>
-                </div>
-                <div class="image-right">
-                    <img src="assets/images/journey-map.webp" alt="Journey Map Comparison">
-                </div>
-            </div>
-        </section>
+<section id="services" class="section bg-light">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">Structural Engineering</div>
+      <div class="card">Project Management</div>
+      <div class="card">Alliance Coordination</div>
+    </div>
+  </div>
+</section>
 
-        <!-- Mission -->
-        <section id="mission" class="section-mission">
-            <div class="container text-center">
-                <h2>Our Mission: Build the Promised Link</h2>
-                <p class="max-800">
-                    The government’s renewal plans reserve space for a bridge but provide no plan to build it.
-                    The Eveleigh Bridge Alliance is fighting to turn that "reserved space" into a reality.
-                    We are advocating for a safe, modern pedestrian and cycle link that honors the 2004 promise.
-                </p>
-                <div class="btn-group">
-                    <a href="#supporters" class="btn btn-primary">Join the Alliance</a>
-                    <a href="#" class="btn btn-secondary">Share This Page</a>
-                </div>
-            </div>
-        </section>
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Recent Projects</h2>
+    <div class="card">Sydney Bridge Upgrade</div>
+  </div>
+</section>
 
-        <!-- Proposed Bridge -->
-        <section id="proposed" class="section-proposed">
-            <div class="container grid-2">
-                <div class="image-left">
-                    <img src="assets/images/heritage-photo.webp" alt="Heritage Bridge Concept">
-                </div>
-                <div class="content-right">
-                    <h2>The Proposed Bridge: Connecting the Precincts</h2>
-                    <p>
-                        The Eveleigh Bridge Alliance advocates for a direct pedestrian and cycle link at the heart of Eveleigh.
-                        This proposal sits almost exactly where a pedestrian bridge stood in 1942.
-                    </p>
-                    <div class="tech-snapshot">
-                        <h3>Technical Snapshot</h3>
-                        <ul>
-                            <li><strong>Height:</strong> ~9 metres above the rail lines</li>
-                            <li><strong>Access:</strong> Ramps and stairs for 100% accessibility</li>
-                            <li><strong>Integration:</strong> Designed to blend with heritage architecture</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="faq" class="section bg-light">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What areas do you service?</button>
+      <div class="faq-answer hidden">Nationwide across Australia.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you manage full lifecycle projects?</button>
+      <div class="faq-answer hidden">Yes — from design through completion.</div>
+    </div>
+  </div>
+</section>
 
-        <!-- FAQ -->
-        <section id="faq" class="section-faq">
-            <div class="container">
-                <h2 class="text-center">Frequently Asked Questions</h2>
-                <div class="accordion">
-                    <details>
-                        <summary>Why do we need a bridge now?</summary>
-                        <div class="faq-content">
-                            The area has shifted from a closed industrial site to a dense residential and commercial suburb.
-                            The current "detour" is no longer sustainable for a walkable city.
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Wasn’t this bridge already planned?</summary>
-                        <div class="faq-content">
-                            Yes. In 2004, the NSW Premier promised a bridge.
-                            While the land around it is being redeveloped, the vital link was never built.
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Will the bridge impact heritage buildings?</summary>
-                        <div class="faq-content">
-                            The Alliance advocates for a design that respects the NSW Heritage Register listing.
-                            A bridge enhances heritage by allowing better access.
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button class="btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
 
-        <!-- Campaign Supporters -->
-        <section id="supporters" class="section-supporters">
-            <div class="container text-center">
-                <h2>Campaign Supporters</h2>
-                <div class="supporters-logos">
-                    <img src="assets/images/ARAG.png" alt="ARAG Logo">
-                    <img src="assets/images/redwatch-logo.png" alt="RedWatch Logo">
-                </div>
-            </div>
-        </section>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Eveleigh Bridge Alliance</p>
+  </div>
+</footer>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p>Join the movement to reunite Eveleigh.</p>
-            </div>
-            <div class="footer-col text-center">
-                <a href="#" class="btn btn-primary">Send a letter to the minister</a>
-            </div>
-            <div class="footer-col text-right">
-                <h3>Eveleigh Bridge Alliance</h3>
-                <p>© 2026 Eveleigh Bridge Project</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Script -->
-    <script src="assets/js/script.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
