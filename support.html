@@ -1,43 +1,133 @@
-<!-- Campaign Supporters -->
-<section class="section-supporters">
-    <div class="container">
-        
-        <div class="text-center">
-            <h2>Campaign Supporters</h2>
-            <p class="max-800" style="margin: 0 auto 3rem;">
-                The Eveleigh Bridge Alliance is supported by local community groups 
-                and organisations advocating for improved pedestrian and cycle 
-                connectivity across the rail corridor.
-            </p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Register your support for improved pedestrian and cycle connectivity in Eveleigh.">
+<title>Support | Eveleigh Bridge Alliance</title>
 
-        <div class="supporters-grid">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/images/favicon.ico">
+</head>
 
-            <div class="supporter-card">
-                <img src="/ARAG.png" alt="ARAG Logo">
-                <h3>Australian Railway Action Group (ARAG)</h3>
-                <p>
-                    Advocating for sustainable transport infrastructure and 
-                    improved rail corridor integration across Sydney.
-                </p>
-            </div>
+<body>
 
-            <div class="supporter-card">
-                <img src="assets/images/redwatch-logo.png" alt="RedWatch Logo">
-                <h3>RedWatch</h3>
-                <p>
-                    A local residents’ watchdog group focused on planning,
-                    transport, and community infrastructure outcomes.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="text-center" style="margin-top:3rem;">
-            <a href="mailto:info@eveleighbridge.org" class="btn btn-primary">
-                Become a Campaign Supporter
+<!-- Header -->
+<header class="site-header">
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/everleigh-logo-blue.png" alt="Eveleigh Bridge Alliance">
             </a>
         </div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="divide.html">The Great Divide</a></li>
+            <li><a href="glance.html">Eveleigh at a Glance</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="proposed.html">The Proposed Bridge</a></li>
+            <li><a href="experience.html">Experience the Divide</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html" class="active">Support</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+<section class="section-support">
+    <div class="container max-800">
+
+        <h1>Register Your Support</h1>
+
+        <p>
+            The Eveleigh Bridge Alliance supports the formal consideration of improved
+            pedestrian and cycle connectivity between North and South Eveleigh.
+            You may use the form below to prepare a message for submission to the relevant Minister.
+        </p>
+
+        <form id="supportForm">
+
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" name="fullName" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" required>
+
+            <label for="postcode">Postcode (optional)</label>
+            <input id="postcode" type="text" name="postcode">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required>
+I support formal consideration of a pedestrian and cycle bridge to improve connectivity between North and South Eveleigh.
+
+I believe improved local accessibility would benefit residents, workers and visitors while supporting active transport outcomes.
+            </textarea>
+
+            <div style="margin:1.5rem 0;">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">
+                    I confirm that this message reflects my personal view and consent to its submission.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Prepare Email</button>
+
+        </form>
+
+        <p style="margin-top:1.5rem; font-size:0.9rem; color:#666;">
+            Your details are not stored on this website. Submitting the form will open
+            your email client so you can review and send the message directly.
+        </p>
 
     </div>
 </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>Contact Us</h3>
+            <p>Join the effort to reconnect Eveleigh.</p>
+        </div>
+        <div class="text-center">
+            <a href="mailto:minister@transport.nsw.gov.au" class="btn btn-primary">Email the Minister Directly</a>
+        </div>
+        <div class="text-right">
+            <h3>Eveleigh Bridge Alliance</h3>
+            <p>© 2026 Eveleigh Bridge Project</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* Form email preparation */
+document.getElementById("supportForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const postcode = document.getElementById("postcode").value;
+    const message = document.getElementById("message").value;
+    const subject = encodeURIComponent("Support for Eveleigh Connectivity Consideration");
+    const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        (postcode ? "Postcode: " + postcode + "\n\n" : "\n") +
+        message
+    );
+    window.location.href = "mailto:minister@transport.nsw.gov.au?subject=" + subject + "&body=" + body;
+});
+
+/* Mobile Menu Toggle */
+document.getElementById("menuToggle").addEventListener("click", function() {
+    document.getElementById("navMenu").classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
