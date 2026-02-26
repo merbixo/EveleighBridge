@@ -4,121 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Proposed Bridge | Eveleigh Bridge Alliance</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-<!-- Cache refresh version added -->
-<link rel="stylesheet" href="assets/css/style.css?v=3">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
 <header class="site-header">
-    <nav class="nav-container">
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance">
-            </a>
-        </div>
-
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="divide.html">The Great Divide</a></li>
-            <li><a href="glance.html">Eveleigh at a Glance</a></li>
-            <li><a href="mission.html">Our Mission</a></li>
-            <li><a href="proposed.html" class="active">The Proposed Bridge</a></li>
-            <li><a href="experience.html">Experience the Divide</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="support.html">Support / Get Involved</a></li>
-        </ul>
-    </nav>
+<nav class="nav-container">
+    <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a></div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="divide.html">The Great Divide</a></li>
+        <li><a href="glance.html">Eveleigh at a Glance</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="proposed.html">The Proposed Bridge</a></li>
+        <li><a href="experience.html">Experience the Divide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="support.html">Support / Get Involved</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
-
-<section class="section-proposed">
-    <div class="container grid-2">
-
-        <div class="image-left">
-            <img src="assets/images/heritage-photo.webp" 
-                 alt="Historic Eveleigh pedestrian bridge" 
-                 loading="lazy">
-
-            <img src="assets/images/bridge-map.png" 
-                 alt="Proposed bridge location map" 
-                 loading="lazy"
-                 style="margin-top:1.5rem;">
-        </div>
-
-        <div class="content-right">
-            <h2>The Proposed Bridge: Connecting the Precincts</h2>
-
-            <p>
-                The Eveleigh Bridge Alliance supports a practical pedestrian 
-                and cycle link at the centre of the precinct. The proposal 
-                reflects the location of the 1942 pedestrian bridge and 
-                improves day-to-day connectivity between the eastern and 
-                western sides of Eveleigh.
-            </p>
-
-            <ul class="tech-snapshot">
-                <li><strong>Height:</strong> Approx. 9 metres above rail corridor</li>
-                <li><strong>Access:</strong> Ramps and stairs for accessibility compliance</li>
-                <li><strong>Design:</strong> Integrated with heritage character</li>
-                <li><strong>Purpose:</strong> Safe pedestrian and cycle connection</li>
-            </ul>
-
-            <div class="btn-group" style="margin-top:1.5rem;">
-                <a href="support.html" class="btn btn-primary">
-                    Support the Bridge
-                </a>
-            </div>
-
-        </div>
+<section id="proposed" class="section-proposed">
+<div class="container grid-2">
+    <div class="image-left">
+        <img src="assets/images/heritage-photo.webp" alt="Heritage Bridge Concept" class="lazyload">
+        <img src="assets/images/1772004915394.png" alt="Proposed Bridge Map" class="lazyload">
     </div>
+    <div class="content-right">
+        <h2>The Proposed Bridge: Connecting the Precincts</h2>
+        <p>The Eveleigh Bridge Alliance advocates for a direct pedestrian and cycle link at the heart of Eveleigh. This proposal aligns with the historic 1942 pedestrian bridge.</p>
+        <ul>
+            <li><strong>Height:</strong> ~9 metres above rail lines</li>
+            <li><strong>Access:</strong> Ramps and stairs for full accessibility</li>
+            <li><strong>Integration:</strong> Designed to blend with heritage architecture</li>
+        </ul>
+    </div>
+</div>
 </section>
-
 </main>
 
 <footer class="site-footer">
-    <div class="container footer-grid">
-
-        <div class="footer-col">
-            <h3>Contact</h3>
-            <p>Community-led proposal focused on connectivity and safety.</p>
-        </div>
-
-        <div class="footer-col text-center">
-            <a href="mailto:minister@example.gov.au" class="btn btn-primary">
-                Send a Letter to the Minister
-            </a>
-        </div>
-
-        <div class="footer-col text-right">
-            <h3>Eveleigh Bridge Alliance</h3>
-            <p>© 2026 Eveleigh Bridge Project</p>
-        </div>
-
-    </div>
+<div class="container footer-grid">
+    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
+    <div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
+    <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
+</div>
 </footer>
 
-<!-- Mobile Menu Script -->
 <script>
-const toggle = document.getElementById('menuToggle');
-const menu = document.getElementById('navMenu');
-
-toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
+window.addEventListener('load', ()=>{document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));});
 </script>
-
 </body>
 </html>
