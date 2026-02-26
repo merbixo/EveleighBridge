@@ -5,8 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home | Eveleigh Bridge Alliance</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+html, body { height:100%; scroll-behavior: smooth; }
+body { display:flex; flex-direction:column; min-height:100vh; font-family:'Lato', sans-serif; }
+main { flex:1; padding:40px 20px; }
+.site-footer { background:#003366; color:#fff; padding:20px 0; text-align:center; }
+.grid-2 { display:flex; flex-wrap:wrap; gap:20px; }
+.grid-2 .image-left, .grid-2 .content-right { flex:1 1 300px; }
+.image-left img, .content-right img { width:100%; height:auto; display:block; margin-bottom:20px; }
+img { opacity:0; transform:translateY(10px); transition:opacity 0.8s ease, transform 0.8s ease; }
+img.loaded { opacity:1; transform:translateY(0); }
+@media(max-width:768px){ .grid-2 { flex-direction:column; } }
+</style>
 </head>
 <body>
+
+<!-- Header -->
 <header class="site-header">
 <nav class="nav-container">
     <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo-blue.png" alt="Eveleigh Bridge Alliance"></a></div>
@@ -23,33 +37,41 @@
 </nav>
 </header>
 
+<!-- Main Content -->
 <main>
 <section id="hero">
-    <div class="container">
-        <h1>Bridging the Divide</h1>
-        <p>For over a century, the railway corridor has separated our neighbourhoods. We aim to build the Eveleigh Bridge to reconnect our community.</p>
-        <div class="grid-2">
-            <div class="image-left"><img src="assets/images/hero-bg.webp" alt="Eveleigh Bridge Vision" class="lazyload"></div>
-            <div class="content-right">
-                <p>Join us in advocating for a safe, accessible pedestrian and cycle link. The bridge will reconnect key precincts while respecting heritage architecture.</p>
-            </div>
+<div class="container">
+    <h1>Bridging the Divide</h1>
+    <p>For over a century, the railway corridor has separated our neighbourhoods. We aim to build the Eveleigh Bridge to reconnect our community.</p>
+    <div class="grid-2">
+        <div class="image-left"><img src="assets/images/hero-bg.webp" alt="Eveleigh Bridge Vision" class="lazyload"></div>
+        <div class="content-right">
+            <p>Join us in advocating for a safe, accessible pedestrian and cycle link. The bridge will reconnect key precincts while respecting heritage architecture.</p>
         </div>
     </div>
+</div>
 </section>
 </main>
 
+<!-- Footer -->
 <footer class="site-footer">
 <div class="container footer-grid">
-    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
-    <div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
-    <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Join the movement to reunite Eveleigh.</p>
+    </div>
+    <div class="footer-col text-center">
+        <a href="#" class="btn btn-primary">Send a letter to the minister</a>
+    </div>
+    <div class="footer-col text-right">
+        <h3>Eveleigh Bridge Alliance</h3>
+        <p>© 2026 Eveleigh Bridge Project</p>
+    </div>
 </div>
 </footer>
 
 <script>
-window.addEventListener('load', ()=>{
-    document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));
-});
+window.addEventListener('load', ()=>{document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));});
 </script>
 </body>
 </html>
