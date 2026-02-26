@@ -4,64 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ | Eveleigh Bridge Alliance</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-html, body { height:100%; scroll-behavior: smooth; }
-body { display:flex; flex-direction:column; min-height:100vh; font-family:'Lato', sans-serif; color:#1a1a1a; }
-main { flex:1; padding:40px 20px; }
-.site-footer { background:#003366; color:#fff; padding:20px 0; text-align:center; }
-details { margin-bottom:15px; border:1px solid #ddd; padding:10px; border-radius:5px; }
-summary { font-weight:bold; cursor:pointer; }
-details[open] { background:#f9f9f9; }
-</style>
 </head>
+
 <body>
 
-<!-- Header -->
 <header class="site-header">
-<nav class="nav-container">
-    <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo-blue.png" alt="Eveleigh Bridge Alliance"></a></div>
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="divide.html">The Great Divide</a></li>
-        <li><a href="glance.html">Eveleigh at a Glance</a></li>
-        <li><a href="mission.html">Our Mission</a></li>
-        <li><a href="proposed.html">The Proposed Bridge</a></li>
-        <li><a href="experience.html">Experience the Divide</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="support.html">Support / Get Involved</a></li>
-    </ul>
-</nav>
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/everleigh-logo-blue.png" alt="Eveleigh Bridge Alliance">
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="divide.html">The Great Divide</a></li>
+            <li><a href="glance.html">Eveleigh at a Glance</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="proposed.html">The Proposed Bridge</a></li>
+            <li><a href="experience.html">Experience the Divide</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="support.html">Support / Get Involved</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- Main Content -->
 <main>
-<section id="faq" class="section-faq">
-<div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-        <summary>Why do we need a bridge now?</summary>
-        <p>The area has shifted from a closed industrial site to a dense residential and commercial suburb. The current detour is no longer sustainable for a walkable city.</p>
-    </details>
-    <details>
-        <summary>Wasn’t this bridge already planned?</summary>
-        <p>Yes. In 2004, the NSW Premier promised a bridge. While the land around it is being redeveloped, the vital link was never built.</p>
-    </details>
-    <details>
-        <summary>Will the bridge impact heritage buildings?</summary>
-        <p>The Alliance advocates for a design that respects the NSW Heritage Register listing. A bridge enhances heritage by allowing better access.</p>
-    </details>
-</div>
+<section>
+    <div class="container max-800">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+
+        <div class="accordion">
+
+            <details>
+                <summary>Why is a bridge needed?</summary>
+                <div class="faq-content">
+                    <p>
+                        The rail corridor forms a 3.5km barrier between surrounding communities. 
+                        The proposed pedestrian and cycle bridge would significantly reduce 
+                        travel times and improve accessibility.
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Will the bridge impact heritage sites?</summary>
+                <div class="faq-content">
+                    <p>
+                        The project is designed to respect and integrate with the historic 
+                        Eveleigh Railway Workshops and surrounding heritage assets.
+                        Detailed heritage assessments would guide the final design.
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Who is funding the project?</summary>
+                <div class="faq-content">
+                    <p>
+                        Funding would be subject to government planning approvals and 
+                        infrastructure prioritisation processes. Community advocacy 
+                        supports inclusion in future infrastructure programs.
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Will it increase traffic?</summary>
+                <div class="faq-content">
+                    <p>
+                        The bridge is intended for pedestrians and cyclists only.
+                        It aims to reduce car dependency by providing a safe, direct
+                        alternative for local trips.
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary>How can I support the project?</summary>
+                <div class="faq-content">
+                    <p>
+                        You can support the initiative by contacting local representatives,
+                        sharing information within your community, and signing up on our
+                        Support page.
+                    </p>
+                </div>
+            </details>
+
+        </div>
+    </div>
 </section>
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
-<div class="container footer-grid">
-    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
-    <div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
-    <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
-</div>
+    <div class="container footer-grid">
+        <div>
+            <h3>Contact Us</h3>
+            <p>Join the effort to reconnect Eveleigh.</p>
+        </div>
+
+        <div class="text-center">
+            <a href="mailto:minister@example.gov.au" class="btn btn-primary">
+                Send a letter to the minister
+            </a>
+        </div>
+
+        <div class="text-right">
+            <h3>Eveleigh Bridge Alliance</h3>
+            <p>© 2026 Eveleigh Bridge Project</p>
+        </div>
+    </div>
 </footer>
 
 </body>
