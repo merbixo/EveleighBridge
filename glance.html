@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eveleigh at a Glance</title>
+<title>Eveleigh at a Glance | Eveleigh Bridge Alliance</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,9 +11,12 @@
 <header class="site-header">
     <nav class="nav-container">
         <div class="logo">
-            <a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a>
+            <a href="index.html">
+                <img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance">
+            </a>
         </div>
 
+        <!-- Hamburger menu for mobile -->
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -77,5 +80,13 @@
 </footer>
 
 <script src="assets/js/script.js"></script>
+<script>
+// Toggle mobile menu
+const toggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});
+</script>
 </body>
 </html>
