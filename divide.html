@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Great Divide: Why We Need the Bridge</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Great Divide | Eveleigh Bridge Alliance</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+html, body { height:100%; scroll-behavior: smooth; }
+body { display:flex; flex-direction:column; min-height:100vh; font-family:'Lato', sans-serif; color:#1a1a1a; }
+main { flex:1; padding:40px 20px; }
+.site-footer { background:#003366; color:#fff; padding:20px 0; text-align:center; }
+.grid-2 { display:flex; flex-wrap:wrap; gap:20px; }
+.grid-2 .image-left, .grid-2 .content-right { flex:1 1 300px; }
+.image-left img, .content-right img { width:100%; height:auto; display:block; margin-bottom:20px; }
+img { opacity:0; transform:translateY(10px); transition:opacity 0.8s ease, transform 0.8s ease; }
+img.loaded { opacity:1; transform:translateY(0); }
+@media(max-width:768px){ .grid-2 { flex-direction:column; } }
+</style>
 </head>
 <body>
+
+<!-- Header -->
 <header class="site-header">
-    <nav class="nav-container">
-        <div class="logo">
-            <a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="divide.html">The Great Divide</a></li>
-            <li><a href="glance.html">Eveleigh at a Glance</a></li>
-            <li><a href="mission.html">Our Mission</a></li>
-            <li><a href="proposed.html">The Proposed Bridge</a></li>
-            <li><a href="experience.html">Experience the Divide</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="support.html">Support / Get Involved</a></li>
-        </ul>
-    </nav>
+<nav class="nav-container">
+    <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo-blue.png" alt="Eveleigh Bridge Alliance"></a></div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="divide.html">The Great Divide</a></li>
+        <li><a href="glance.html">Eveleigh at a Glance</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="proposed.html">The Proposed Bridge</a></li>
+        <li><a href="experience.html">Experience the Divide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="support.html">Support / Get Involved</a></li>
+    </ul>
+</nav>
 </header>
 
+<!-- Main Content -->
 <main>
-<section class="section-divide">
-    <div class="container grid-2">
-        <div class="content-left">
-            <h1>The Great Divide</h1>
-            <p>The rail corridor between Redfern and Erskineville spans 3.5 km. Walking around it takes 46 minutes, separating communities and complicating daily trips.</p>
-            <h3>Reconnecting Suburbs</h3>
-            <ul>
-                <li><strong>North Side:</strong> Darlington, Newtown, Chippendale, Ultimo, Sydney University, Carriageworks</li>
-                <li><strong>South Side:</strong> Alexandria, Erskineville, Waterloo, South Eveleigh (CBA/Mirvac), local high school</li>
-            </ul>
-            <h3>Time Saved</h3>
-            <ul>
-                <li>Carriageworks → Large Erecting Shop: 16 min now → < 5 min with bridge</li>
-            </ul>
-        </div>
-        <div class="image-right">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Sydney_map.png" alt="Map illustrating the barrier">
-        </div>
+<section id="divide" class="section-divide">
+<div class="container grid-2">
+    <div class="content-right">
+        <h2>The Great Divide</h2>
+        <p>The rail corridor between Redfern and Erskineville is a 3.5km barrier. Walks that once took minutes now take 46 minutes.</p>
+        <ul>
+            <li><strong>North:</strong> Darlington, Newtown, Ultimo, Sydney University</li>
+            <li><strong>South:</strong> Alexandria, Erskineville, South Eveleigh</li>
+        </ul>
     </div>
+    <div class="image-left"><img src="assets/images/journey-map.webp" alt="Journey Map Comparison" class="lazyload"></div>
+</div>
 </section>
 </main>
 
+<!-- Footer -->
 <footer class="site-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
-            <h3>Contact Us</h3>
-            <p>Join the effort to reconnect Eveleigh.</p>
-        </div>
-        <div class="footer-col text-center">
-            <a href="mailto:minister@example.gov.au" class="btn btn-primary">Send a letter to the minister</a>
-        </div>
-        <div class="footer-col text-right">
-            <h3>Eveleigh Bridge Alliance</h3>
-            <p>© 2026 Eveleigh Bridge Project</p>
-        </div>
-    </div>
+<div class="container footer-grid">
+    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
+    <div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
+    <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
+</div>
 </footer>
-<script src="assets/js/script.js"></script>
+
+<script>
+window.addEventListener('load', ()=>{document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));});
+</script>
 </body>
 </html>
