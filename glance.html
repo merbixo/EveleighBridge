@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eveleigh at a Glance</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eveleigh at a Glance | Eveleigh Bridge Alliance</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 <header class="site-header">
     <nav class="nav-container">
         <div class="logo">
-            <a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a>
+            <a href="index.html">
+                <img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance">
+            </a>
         </div>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="divide.html">The Great Divide</a></li>
-            <li><a href="glance.html">Eveleigh at a Glance</a></li>
+            <li><a href="glance.html" class="active">Eveleigh at a Glance</a></li>
             <li><a href="mission.html">Our Mission</a></li>
             <li><a href="proposed.html">The Proposed Bridge</a></li>
             <li><a href="experience.html">Experience the Divide</a></li>
@@ -28,24 +37,28 @@
 <main>
 <section class="section-glance">
     <div class="container">
-        <h1>Eveleigh at a Glance</h1>
+        <h1 class="text-center">Eveleigh at a Glance</h1>
         <div class="grid-2">
-            <div>
+            <div class="content-left">
                 <h2>North Eveleigh</h2>
                 <p><strong>Primary Use:</strong> Arts, culture, and housing</p>
                 <p><strong>Daily Visitors:</strong> 400,000+</p>
                 <p><strong>Nearby:</strong> Sydney University, Darlington Public School</p>
-                <img src="assets/images/NECarriagework.jpg" alt="Carriageworks North Eveleigh" style="width:100%;height:auto;">
+                <div class="image-left">
+                    <img src="assets/images/NECarriagework.jpg" alt="Carriageworks North Eveleigh">
+                </div>
             </div>
-            <div>
+            <div class="content-right">
                 <h2>South Eveleigh</h2>
                 <p><strong>Primary Use:</strong> Tech hub & innovation</p>
                 <p><strong>Daily Workers:</strong> 20,000+</p>
                 <p><strong>Nearby:</strong> Alexandria Park Community School, Waterloo Metro</p>
-                <img src="assets/images/SETechHub.jpg" alt="South Eveleigh Tech Hub" style="width:100%;height:auto;">
+                <div class="image-right">
+                    <img src="assets/images/SETechHub.jpg" alt="South Eveleigh Tech Hub">
+                </div>
             </div>
         </div>
-        <div class="btn-group" style="margin-top:20px;text-align:center;">
+        <div class="btn-group text-center" style="margin-top:20px;">
             <a href="support.html" class="btn btn-primary">Join the Alliance</a>
         </div>
     </div>
@@ -67,6 +80,7 @@
         </div>
     </div>
 </footer>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
