@@ -11,7 +11,6 @@
 <header class="site-header">
 <nav class="nav-container">
     <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a></div>
-    <div class="menu-toggle"><span></span><span></span><span></span></div>
     <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="divide.html">The Great Divide</a></li>
@@ -30,10 +29,10 @@
 <div class="container">
     <h2>Experience the Divide</h2>
     <p>Walk the current detour route around the Eveleigh rail corridor and experience the challenge it creates for pedestrians and cyclists. The 3.5 km detour adds unnecessary time and distance to everyday journeys.</p>
+
     <div class="grid-2">
         <div class="image-left">
             <img src="assets/images/1772088863377.png" alt="Detour Map" class="lazyload">
-            <img src="assets/images/Detour2.png" alt="Detour Photo" class="lazyload" style="margin-top:1rem;">
         </div>
         <div class="content-right">
             <ul>
@@ -43,18 +42,26 @@
             </ul>
         </div>
     </div>
+
+    <!-- Additional Detour Image -->
+    <div class="grid-1" style="margin-top:20px;">
+        <img src="assets/images/Detour2.png" alt="Secondary Detour View" style="width:100%;height:auto;">
+    </div>
+
 </div>
 </section>
 </main>
 
 <footer class="site-footer">
 <div class="container footer-grid">
-    <div class="footer-col"><h3>Contact Us</h3><p>Join the effort to reconnect Eveleigh.</p></div>
+    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
     <div class="footer-col text-center"><a href="mailto:minister@example.gov.au" class="btn btn-primary">Send a letter to the minister</a></div>
     <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
 </div>
 </footer>
 
-<script src="assets/js/script.js"></script>
+<script>
+window.addEventListener('load', ()=>{document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));});
+</script>
 </body>
 </html>
