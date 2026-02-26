@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridging the Divide: The Eveleigh Bridge Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridging the Divide: The Eveleigh Bridge Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 <header class="site-header">
     <nav class="nav-container">
         <div class="logo">
             <a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a>
         </div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="divide.html">The Great Divide</a></li>
             <li><a href="glance.html">Eveleigh at a Glance</a></li>
             <li><a href="mission.html">Our Mission</a></li>
@@ -29,38 +37,39 @@
 </header>
 
 <main>
-    <section id="hero" class="hero-section" style="background-image: url('assets/images/hero-bg.webp');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Bridging the Divide: The Eveleigh Bridge Project</h1>
-                <p class="hero-subtext">
-                    For over a century, the railway corridor has served as Sydney’s industrial heart. Today, it remains a physical barrier. We are working to deliver a bridge that reunites communities across Eveleigh.
-                </p>
-                <div class="hero-btns">
-                    <a href="support.html" class="btn btn-primary">Support the Bridge</a>
-                    <a href="proposed.html" class="btn btn-secondary">View the Masterplan</a>
-                </div>
+<section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+        <div class="hero-content">
+            <h1>Bridging the Divide: The Eveleigh Bridge Project</h1>
+            <p class="hero-subtext">
+                For over a century, the railway corridor has served as Sydney’s industrial heart. Today, it remains a physical barrier. We are working to deliver a bridge that reunites communities across Eveleigh.
+            </p>
+            <div class="hero-btns">
+                <a href="support.html" class="btn btn-primary">Support the Bridge</a>
+                <a href="proposed.html" class="btn btn-secondary">View the Masterplan</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </main>
 
 <footer class="site-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
-            <h3>Contact Us</h3>
-            <p>Join the effort to reconnect Eveleigh.</p>
-        </div>
-        <div class="footer-col text-center">
-            <a href="mailto:minister@example.gov.au" class="btn btn-primary">Send a letter to the minister</a>
-        </div>
-        <div class="footer-col text-right">
-            <h3>Eveleigh Bridge Alliance</h3>
-            <p>© 2026 Eveleigh Bridge Project</p>
-        </div>
+<div class="container footer-grid">
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Join the effort to reconnect Eveleigh.</p>
     </div>
+    <div class="footer-col text-center">
+        <a href="mailto:minister@example.gov.au" class="btn btn-primary">Send a letter to the minister</a>
+    </div>
+    <div class="footer-col text-right">
+        <h3>Eveleigh Bridge Alliance</h3>
+        <p>© 2026 Eveleigh Bridge Project</p>
+    </div>
+</div>
 </footer>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
