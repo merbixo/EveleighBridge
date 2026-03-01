@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
 <header class="site-header">
 <nav class="nav-container">
     <div class="logo"><a href="index.html"><img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance"></a></div>
@@ -25,11 +24,19 @@
 </header>
 
 <main>
-<section id="proposed" class="section-proposed">
+<section class="section-proposed">
 <div class="container grid-2">
-    <div class="image-left">
-        <img src="assets/images/heritage-photo.webp" alt="Heritage Bridge Concept" class="lazyload">
-        <img src="assets/images/1772004915394.png" alt="Proposed Bridge Map" class="lazyload">
+    <div class="image-card-grid">
+        <div class="image-card">
+            <img src="assets/images/heritage-photo.webp" alt="Heritage Bridge Concept">
+            <h3>Heritage Integration</h3>
+            <p>Bridge design blends with existing heritage architecture.</p>
+        </div>
+        <div class="image-card">
+            <img src="assets/images/1772004915394.png" alt="Proposed Bridge Map">
+            <h3>Proposed Map</h3>
+            <p>Shows the alignment of the pedestrian and cycle bridge.</p>
+        </div>
     </div>
     <div class="content-right">
         <h2>The Proposed Bridge: Connecting the Precincts</h2>
@@ -46,14 +53,11 @@
 
 <footer class="site-footer">
 <div class="container footer-grid">
-    <div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
-    <div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
-    <div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
+<div class="footer-col"><h3>Contact Us</h3><p>Join the movement to reunite Eveleigh.</p></div>
+<div class="footer-col text-center"><a href="#" class="btn btn-primary">Send a letter to the minister</a></div>
+<div class="footer-col text-right"><h3>Eveleigh Bridge Alliance</h3><p>© 2026 Eveleigh Bridge Project</p></div>
 </div>
 </footer>
-
-<script>
-window.addEventListener('load', ()=>{document.querySelectorAll('img.lazyload').forEach(img=>img.classList.add('loaded'));});
-</script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
