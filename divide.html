@@ -6,6 +6,19 @@
 <title>The Great Divide | Eveleigh Bridge Alliance</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
+    <script>
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2 });
+
+faders.forEach(el => observer.observe(el));
+    </script>
 <body>
 
 <header class="site-header">
