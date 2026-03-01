@@ -1,96 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bridging the Divide: The Eveleigh Bridge Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging the Divide: The Eveleigh Bridge Project</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-<!-- Cache-safe CSS -->
-<link rel="stylesheet" href="assets/css/style.css?v=6">
-
-<style>
-/* Mobile Navigation Fix */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: #fff;
-    margin: 4px 0;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #000;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .grid-2 {
-        grid-template-columns: 1fr !important;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-subtext {
-        font-size: 0.95rem;
-    }
-
-    .supporters-logos img {
-        max-width: 120px;
-        margin: 10px;
-    }
-}
-</style>
+    <!-- Cache busting added -->
+    <link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 
 <body>
 
 <header class="site-header">
     <nav class="nav-container">
-
         <div class="logo">
-            <a href="index.html">
+            <a href="#hero">
                 <img src="assets/images/everleigh-logo.png" alt="Eveleigh Bridge Alliance">
             </a>
         </div>
-
-        <div class="menu-toggle" id="menuToggle">
-            <span></span><span></span><span></span>
-        </div>
-
-        <ul class="nav-menu" id="navMenu">
+        <ul class="nav-menu">
             <li><a href="#hero">Bridging the Divide</a></li>
             <li><a href="#divide">The Great Divide</a></li>
             <li><a href="#mission">Our Mission</a></li>
             <li><a href="#proposed">The Proposed Bridge</a></li>
             <li><a href="#supporters">Campaign Supporters</a></li>
         </ul>
-
     </nav>
 </header>
 
@@ -102,9 +40,9 @@
         <div class="hero-content">
             <h1>Bridging the Divide: The Eveleigh Bridge Project</h1>
             <p class="hero-subtext">
-                For over a century, the railway corridor has served as the industrial heart of Sydney. 
-                Today, it remains a physical barrier between neighbourhoods. 
-                The proposal supports a practical pedestrian and cycle link.
+                For over a century, the railway corridor has served as the industrial heart of Sydney.
+                Today, it stands as a physical barrier between neighbouring communities.
+                This proposal supports a practical pedestrian and cycle link across Eveleigh.
             </p>
             <div class="hero-btns">
                 <a href="#supporters" class="btn btn-primary">Support the Bridge</a>
@@ -117,18 +55,33 @@
 <section id="divide" class="section-divide">
     <div class="container grid-2">
         <div class="content-left">
-            <h2>The Great Divide: Why Connectivity Matters</h2>
+            <h2>The Great Divide</h2>
             <p>
-                The rail corridor creates a 3.5-kilometre barrier. 
-                A direct connection would reduce walking time and improve local accessibility.
+                The rail corridor between Redfern and Erskineville creates a 3.5-kilometre barrier.
+                The current detour is approximately 46 minutes on foot.
             </p>
+            <h3>Neighbouring Areas</h3>
             <ul>
-                <li><strong>North:</strong> Darlington, Newtown, Sydney University</li>
-                <li><strong>South:</strong> Alexandria, Erskineville, Waterloo</li>
+                <li><strong>North:</strong> Darlington, Newtown, Chippendale, Ultimo, Sydney University, Carriageworks.</li>
+                <li><strong>South:</strong> Alexandria, Erskineville, Waterloo, South Eveleigh, local schools.</li>
             </ul>
         </div>
         <div class="image-right">
-            <img src="assets/images/journey-map.webp" alt="Journey Map Comparison" loading="lazy">
+            <img src="assets/images/journey-map.webp" alt="Journey Map Comparison">
+        </div>
+    </div>
+</section>
+
+<section id="mission" class="section-mission">
+    <div class="container text-center">
+        <h2>Our Mission</h2>
+        <p class="max-800">
+            Renewal plans reserve space for a pedestrian bridge.
+            This proposal supports progressing that reserved corridor into a funded and deliverable project.
+        </p>
+        <div class="btn-group">
+            <a href="#supporters" class="btn btn-primary">Join the Alliance</a>
+            <a href="#" class="btn btn-secondary">Share This Page</a>
         </div>
     </div>
 </section>
@@ -136,15 +89,44 @@
 <section id="proposed" class="section-proposed">
     <div class="container grid-2">
         <div class="image-left">
-            <img src="assets/images/heritage-photo.webp" alt="Heritage Bridge Concept" loading="lazy">
+            <img src="assets/images/heritage-photo.webp" alt="Historic pedestrian bridge location">
         </div>
         <div class="content-right">
             <h2>The Proposed Bridge</h2>
-            <ul>
-                <li><strong>Height:</strong> ~9 metres above rail</li>
-                <li><strong>Access:</strong> Ramps + stairs</li>
-                <li><strong>Design:</strong> Heritage-sensitive</li>
-            </ul>
+            <p>
+                The proposal aligns closely with the location of the 1942 pedestrian bridge.
+                It provides a direct east-west pedestrian and cycle connection.
+            </p>
+            <div class="tech-snapshot">
+                <h3>Technical Snapshot</h3>
+                <ul>
+                    <li><strong>Height:</strong> Approx. 9 metres above rail corridor</li>
+                    <li><strong>Access:</strong> Ramps and stairs</li>
+                    <li><strong>Design:</strong> Integrated with heritage character</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="section-faq">
+    <div class="container">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion">
+            <details>
+                <summary>Why is a bridge needed?</summary>
+                <div class="faq-content">
+                    The precinct has shifted to mixed residential and employment use.
+                    Improved pedestrian connectivity supports safe and direct access.
+                </div>
+            </details>
+            <details>
+                <summary>Was a bridge previously proposed?</summary>
+                <div class="faq-content">
+                    Earlier planning documents reserved a corridor for a pedestrian link.
+                    This proposal supports delivering that connection.
+                </div>
+            </details>
         </div>
     </div>
 </section>
@@ -153,7 +135,7 @@
     <div class="container text-center">
         <h2>Campaign Supporters</h2>
         <div class="supporters-logos">
-            <img src="assets/images/arag-logo.png" alt="ARAG Logo">
+            <img src="assets/images/ARAG.png" alt="ARAG Logo">
             <img src="assets/images/redwatch-logo.png" alt="RedWatch Logo">
         </div>
     </div>
@@ -165,13 +147,16 @@
     <div class="container footer-grid">
         <div class="footer-col">
             <h3>Contact</h3>
-            <p>Community-led infrastructure proposal.</p>
+            <p>Community-led connectivity proposal.</p>
         </div>
+
         <div class="footer-col text-center">
-            <a href="mailto:minister@example.gov.au" class="btn btn-primary">
+            <a href="mailto:minister@transport.nsw.gov.au?subject=Eveleigh Bridge Proposal Support&body=Dear Minister,%0D%0A%0D%0AI support progressing the proposed Eveleigh pedestrian bridge.%0D%0A%0D%0AKind regards," 
+               class="btn btn-primary">
                 Send a letter to the minister
             </a>
         </div>
+
         <div class="footer-col text-right">
             <h3>Eveleigh Bridge Alliance</h3>
             <p>© 2026 Eveleigh Bridge Project</p>
@@ -179,14 +164,7 @@
     </div>
 </footer>
 
-<script>
-const toggle = document.getElementById('menuToggle');
-const menu = document.getElementById('navMenu');
-
-toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
-</script>
+<script src="assets/js/script.js?v=8"></script>
 
 </body>
 </html>
