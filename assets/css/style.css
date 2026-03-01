@@ -124,6 +124,76 @@ p { margin-bottom:1.2rem; }
 .btn-secondary:hover { background: var(--putty); }
 
 /* =========================
+   CAMPAIGN IMAGE PLACEHOLDERS
+========================= */
+.section-campaign-images {
+    padding: 5rem 2rem;
+    background: #f7f9fb;
+}
+
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.campaign-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.image-holder {
+    width: 100%;
+    height: 180px;
+    background: #dde5e9; /* Placeholder background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.image-holder img.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.campaign-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.campaign-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .campaign-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
    GRID & IMAGES
 ========================= */
 .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
